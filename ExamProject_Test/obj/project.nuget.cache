@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eWt+IIWhbUbBMBuOlokNBx6DAyw3cZqStb6WesqgexxU8Y88+X2KyOCBhugPU3yCWcBMKqBDID5+hvSVxfpbZw==",
+  "dgSpecHash": "L3yN/woplqYZvUzKLwZ2ZxrEa5k7cshbKthmmPiPk6HGImSOtf81YWhqzgcbqd+8qrX0Re92ZLnmh3PWSypyoA==",
   "success": true,
   "projectFilePath": "D:\\Work\\School\\Software develpoment\\ExamProject\\ExamProject_Test\\ExamProject_Test\\ExamProject_Test.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\boben\\.nuget\\packages\\coingeckoasyncapi\\1.5.5\\coingeckoasyncapi.1.5.5.nupkg.sha512",
+    "C:\\Users\\boben\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

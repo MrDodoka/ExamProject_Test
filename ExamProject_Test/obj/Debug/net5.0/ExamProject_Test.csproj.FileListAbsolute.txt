@@ -9,7 +9,8 @@ D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Tes
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\bin\Debug\net5.0\ExamProject_Test.pdb
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\bin\Debug\net5.0\ExamProject_Test.Views.dll
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\bin\Debug\net5.0\ExamProject_Test.Views.pdb
-D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.csproj.AssemblyReference.cache
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\bin\Debug\net5.0\CoinGecko.dll
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.GeneratedMSBuildEditorConfig.editorconfig
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.AssemblyInfoInputs.cache
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.AssemblyInfo.cs
@@ -22,14 +23,15 @@ D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Tes
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.TagHelpers.input.cache
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.TagHelpers.output.cache
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.RazorCoreGenerate.cache
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\Razor\Pages\CoinGeckoMethodTest.cshtml.g.cs
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.RazorTargetAssemblyInfo.cache
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.RazorTargetAssemblyInfo.cs
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.Views.pdb
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.csproj.CopyComplete
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.dll
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ref\ExamProject_Test.dll
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.pdb
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.genruntimeconfig.cache
-D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.csproj.CopyComplete
-D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs

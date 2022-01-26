@@ -1,0 +1,19 @@
+﻿@page
+@using ExamProject_Test.Controllers
+@model ExamProject_Test.Pages.CoinGeckoMethodTestModel
+@{
+    ViewData["Title"] = "Test Page";
+    CoinGeckoController CGC = new();
+}
+<div>
+    <p>
+        asdasd
+    </p>
+        @foreach(var token in await CGC.TestCGMethod())
+        {
+            <p>The price of @token.Name : @token.CurrentPrice</p>
+        }
+    <p>
+        asdasd
+    </p>
+</div>
