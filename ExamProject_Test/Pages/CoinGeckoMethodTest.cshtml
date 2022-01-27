@@ -1,19 +1,96 @@
 ﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using ExamProject_Test.Controllers
 @model ExamProject_Test.Pages.CoinGeckoMethodTestModel
 @{
     ViewData["Title"] = "Test Page";
     CoinGeckoController CGC = new();
+    var coins = await CGC.GetTopTenCoins();
 }
+<head>
+    <title>Test Page</title>
+</head>
 <div>
-    <p>
-        asdasd
-    </p>
-        @foreach(var token in await CGC.TestCGMethod())
-        {
-            <p>The price of @token.Name : @token.CurrentPrice</p>
-        }
-    <p>
-        asdasd
-    </p>
+    <section id="CoinCards">
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankOneCoin"><img class="CoinCardImage" src="@coins[0].Image"></a>
+                <p class="CoinCardName">@coins[0].Name (@coins[0].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[0].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankTwoCoin"><img class="CoinCardImage" src="@coins[1].Image"></a>
+                <p class="CoinCardName">@coins[1].Name (@coins[1].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[1].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankThreeCoin"><img class="CoinCardImage" src="@coins[2].Image"></a>
+                <p class="CoinCardName">@coins[2].Name (@coins[2].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[2].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankFourCoin"><img class="CoinCardImage" src="@coins[3].Image"></a>
+                <p class="CoinCardName">@coins[3].Name (@coins[3].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[3].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankFiveCoin"><img class="CoinCardImage" src="@coins[4].Image"></a>
+                <p class="CoinCardName">@coins[4].Name (@coins[4].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[4].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankSixCoin"><img class="CoinCardImage" src="@coins[5].Image"></a>
+                <p class="CoinCardName">@coins[5].Name (@coins[5].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[5].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankSevenCoin"><img class="CoinCardImage" src="@coins[6].Image"></a>
+                <p class="CoinCardName">@coins[6].Name (@coins[6].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[6].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankEightCoin"><img class="CoinCardImage" src="@coins[7].Image"></a>
+                <p class="CoinCardName">@coins[7].Name (@coins[7].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[7].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankNineCoin"><img class="CoinCardImage" src="@coins[8].Image"></a>
+                <p class="CoinCardName">@coins[8].Name (@coins[8].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[8].CurrentPrice</p>
+            </div>
+        </div>
+
+        <div class="cardka">
+            <div class="cardHeader">
+                <a asp-area="" asp-page="/CoinPages/RankTenCoin"><img class="CoinCardImage" src="@coins[9].Image"></a>
+                <p class="CoinCardName">@coins[9].Name (@coins[9].Symbol.ToUpper())</p>
+                <p class="CoinCardPrice">$@coins[9].CurrentPrice</p>
+            </div>
+        </div>
+    </section>
 </div>

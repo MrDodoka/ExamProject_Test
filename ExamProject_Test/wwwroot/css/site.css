@@ -141,7 +141,68 @@ h1 {
 
 
 
+#CoinCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 5%;
+}
+/*CONTENT*/
+.cardka {
+    margin: 15px;
+    padding: 15px 0px;
+    ;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(3, 3, 3);
+    text-align: center;
+    color: green;
+    width: 250px;
+}
 
+.cardHeader p {
+    margin: 10px;
+}
+
+.cardHeader {
+    margin-bottom: 45px;
+}
+
+.CoinCardImage {
+    width: 75px;
+}
+
+
+/*Táblázat 1nap, 14nap ... */
+.centerTable {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.coinTable {
+    background-color: rgb(12, 12, 12);
+    ;
+}
+
+.coinTable, th, td {
+    border: 1px solid green;
+    border-collapse: collapse;
+    padding: 8px 7px;
+}
+
+    .coinTable p {
+        text-decoration: none;
+        color: rgb(38, 255, 0);
+        font-size: .8em;
+    }
+
+
+.daysResult p {
+    margin: 0px;
+    padding: 5px 0px;
+    font-size: .7em;
+}
 
 
 

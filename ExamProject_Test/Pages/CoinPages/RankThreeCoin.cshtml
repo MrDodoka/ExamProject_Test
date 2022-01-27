@@ -1,0 +1,16 @@
+﻿@page
+@using ExamProject_Test.Controllers
+@model ExamProject_Test.Pages.CoinPages.RankThreeCoinModel
+@{
+    CoinGeckoController CGC = new();
+    var topTenCoins = await CGC.GetTopTenCoins();
+    var topThreeCoin = await CGC.GetTopNCoin(topTenCoins[2].Id);
+}
+<head>
+    <title>@topThreeCoin.Name</title>
+</head>
+<div>
+    <p>Name of the coin: @topThreeCoin.Name</p>
+    <p>Rank of the coin: @topThreeCoin.MarketCapRank</p>
+    <p>Price of the coin: @topTenCoins[2].CurrentPrice</p>
+</div>

@@ -7,14 +7,20 @@ namespace ExamProject_Test.Controllers
 {
     public class CoinGeckoController
     {
-        CoinGeckoClient CG = new();
+        static CoinGeckoClient CG = new();
 
-        public async Task<List<CoinMarkets>>TestCGMethod()
+        public async Task<List<CoinMarkets>>GetTopTenCoins()
         {
 
-            var asd = await CG.CoinsClient.GetCoinMarkets("usd", new string[] { }, null, null, null, false, null, null);
+            var coin = await CG.CoinsClient.GetCoinMarkets("usd", new string[] { }, null, null, null, false, null, null);
 
-            return asd;
+            return coin;
+        }
+
+        public async Task<CoinFullDataById> GetTopNCoin(string id)
+        {
+            var coin = await CG.CoinsClient.GetAllCoinDataWithId(id);
+            return coin;
         }
     }
 }
