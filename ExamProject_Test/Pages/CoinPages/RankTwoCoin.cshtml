@@ -10,7 +10,130 @@
     <title>@topTwoCoin.Name</title>
 </head>
 <div>
-    <p>Name of the coin: @topTwoCoin.Name</p>
+    @*<p>Name of the coin: @topTwoCoin.Name</p>
     <p>Rank of the coin: @topTwoCoin.MarketCapRank</p>
-    <p>Price of the coin: @topTenCoins[1].CurrentPrice</p>
+    <p>Price of the coin: @Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)</p>*@
+    <div class="CoinPageContent">
+        <div class="TopGrid">
+
+            <div class="TopGridItem">
+                <div class="BasicInfo">
+                    <p class="CoinRank">Rank #2</p>
+                    <div class="CoinImageName">
+                        <img class="CoinImage" src=@topTwoCoin.Image.Small><p class="CoinName">@topTwoCoin.Name (@topTwoCoin.Symbol.ToUpper())</p>
+                    </div>
+                    <div class="CoinPriceAndChange">
+                        <p class="CoinPrice">$@topTwoCoin.MarketData.CurrentPrice["usd"]<span class="CoinPriceChange">@Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)%</span></p>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="TopGridItem">
+                <div class="InfoGrid">
+                    <div class="InfoGridItem">Info</div>
+                    <div class="InfoGridItem"></div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Website
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topTwoCoin.Links.Homepage.First()" target="_blank">ethereum.org</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Explorers
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topTwoCoin.Links.BlockchainSite.First()" target="_blank">Etherscan</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Wallets
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="https://www.ledger.com/" target="_blank">Ledger</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://trezor.io/" target="_blank">Trezor</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://metamask.io/" target="_blank">Metamask</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://www.xdefi.io/" target="_blank">Xdefi</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://coin98.net/" target="_blank">Coin98</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Community
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topTwoCoin.Links.SubredditUrl" target="_blank">Reddit</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://twitter.com/@topTwoCoin.Links.TwitterScreenName" target="_blank">Twitter</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://www.facebook.com/@topTwoCoin.Links.FacebookUsername" target="_blank">Facebook</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://discord.com/invite/CetY6Y4" target="_blank">Discord</a>
+                        </div>
+                    </div>
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Source Code
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topTwoCoin.Links.ReposUrl.Github.First()" target="_blank">Github</a>
+                        </div>
+                    </div>
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            API id
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a id="address" onclick="CopyToClipBoard()">ethereum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TopGridItem">3</div>
+            <div class="TopGridItem">4</div>
+            <div class="TopGridItem">5</div>
+            <div class="TopGridItem">6</div>
+        </div>
+    </div>
 </div>

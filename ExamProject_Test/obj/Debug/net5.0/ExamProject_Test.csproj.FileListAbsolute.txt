@@ -45,3 +45,4 @@ D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Tes
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ref\ExamProject_Test.dll
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.pdb
 D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.genruntimeconfig.cache
+D:\Work\School\Software develpoment\ExamProject\ExamProject_Test\ExamProject_Test\obj\Debug\net5.0\ExamProject_Test.csproj.AssemblyReference.cache

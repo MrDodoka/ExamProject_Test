@@ -8,7 +8,6 @@
     var coins = await CGC.GetTopTenCoins();
 }
 <head>
-    <link href="~/css/site.css" rel="stylesheet" />
     <title>Main Page</title>
 </head>
 <section class=hero>
@@ -42,6 +41,23 @@
                             <a asp-area="" asp-page="/CoinPages/RankOneCoin"><img class="CoinCardImage" src="@coins[0].Image"></a>
                             <p class="CoinCardName">@coins[0].Name (@coins[0].Symbol.ToUpper())</p>
                             <p class="CoinCardPrice">$@coins[0].CurrentPrice</p>
+                        </div>
+
+                        <div class="centerTable">
+                            <table class="coinTable">
+                                <tr class="daySpan">
+                                    <th>7d</th>
+                                    <th>14d</th>
+                                    <th>30d</th>
+                                    <th>1y</th>
+                                </tr>
+                                <tr class="daysResult">
+                                    <td><p class="7dResult">@coins[0].PriceChangePercentage7DInCurrency</p></td>
+                                    <td><p class="14dResult"></p></td>
+                                    <td><p class="30dResult"><p></td>
+                                    <td><p class="1yResult"></p></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </a>

@@ -194,9 +194,103 @@ h1 {
 
 
 
+/*Coin page CSS*/
+.CoinPageContent {
+    color: white;
+    margin: 50px 100px;
+    text-align: center;
+}
 
+.TopGrid {
+    display: grid;
+    grid-template-columns: 80% auto;
+}
 
+.TopGridItem {
+    background-color: #252525;
+}
 
+.BasicInfo {
+    text-align: left;
+}
+
+.CoinRank {
+    display: inline;
+    font-size: small;
+    background-color: gray;
+    padding: auto;
+    padding: 2px 3px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.CoinImageName {
+    margin: 5px 0px;
+}
+
+.CoinImage {
+    width: 28px;
+    vertical-align: middle;
+}
+
+.CoinName {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.CoinPriceAndChange {
+}
+
+.CoinPrice {
+    margin: 0;
+    font-size: xx-large;
+}
+
+.CoinPriceChange {
+    display: inline;
+    font-size: medium;
+    vertical-align: 8px;
+    margin: 0px 10px;
+    padding-bottom: 100px;
+}
+
+.InfoGrid {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 35% auto;
+}
+
+.InfoGridItem {
+    margin: 2.5px 0px;
+}
+
+.InfoCategory {
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.InfoItem {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    background-color: gray;
+    padding: 2px 3px;
+    border-radius: 5px;
+    margin: 2.5px 0px;
+}
+
+    .InfoItem a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .InfoItem a:hover {
+            text-decoration: none;
+            color: rgb(72, 197, 0);
+            cursor: pointer;
+        }
+/*Coin page CSS*/
 
 
 

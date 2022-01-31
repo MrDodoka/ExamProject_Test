@@ -13,4 +13,128 @@
     <p>Name of the coin: @topOneCoin.Name</p>
     <p>Rank of the coin: @topOneCoin.MarketCapRank</p>
     <p>Price of the coin: @topTenCoins[0].CurrentPrice</p>
+    <p>@topOneCoin.MarketData.PriceChangePercentage7DInCurrency["usd"]</p>
+    <div class="CoinPageContent">
+        <div class="TopGrid">
+
+            <div class="TopGridItem">
+                <div class="BasicInfo">
+                    <p class="CoinRank">Rank #2</p>
+                    <div class="CoinImageName">
+                        <img class="CoinImage" src=@topOneCoin.Image.Small><p class="CoinName">@topOneCoin.Name (@topOneCoin.Symbol.ToUpper())</p>
+                    </div>
+                    <div class="CoinPriceAndChange">
+                        <p class="CoinPrice">$@topOneCoin.MarketData.CurrentPrice["usd"]<span class="CoinPriceChange">@topOneCoin.MarketData.MarketCapChange24HInCurrency["usd"]%</span></p>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="TopGridItem">
+                <div class="InfoGrid">
+                    <div class="InfoGridItem">Info</div>
+                    <div class="InfoGridItem"></div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Website
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topOneCoin.Links.Homepage.First()">ethereum.org</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Explorers
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topOneCoin.Links.Homepage.First()">Etherscan</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Wallets
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="https://www.ledger.com/">Ledger</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://trezor.io/">Trezor</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://metamask.io/">Metamask</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://www.xdefi.io/">Xdefi</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://coin98.net/">Coin98</a>
+                        </div>
+                    </div>
+
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Community
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topOneCoin.Links.SubredditUrl">Reddit</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://twitter.com/@topOneCoin.Links.TwitterScreenName">Twitter</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://www.facebook.com/@topOneCoin.Links.FacebookUsername">Facebook</a>
+                        </div>
+                        <div class="InfoItem">
+                            <a href="https://discord.com/invite/CetY6Y4">Discord</a>
+                        </div>
+                    </div>
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            Source Code
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            <a href="@topOneCoin.Links.ReposUrl.Github.First()">Github</a>
+                        </div>
+                    </div>
+
+                    <div class="InfoGridItem">
+                        <div class="InfoCategory">
+                            API id
+                        </div>
+                    </div>
+                    <div class="InfoGridItem">
+                        <div class="InfoItem">
+                            ethereum
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TopGridItem">3</div>
+            <div class="TopGridItem">4</div>
+            <div class="TopGridItem">5</div>
+            <div class="TopGridItem">6</div>
+        </div>
+    </div>
 </div>
