@@ -1,23 +1,39 @@
-﻿body {
+﻿:root {
+    --background: rgb(0, 0, 0);
+    --main: #ffffff;
+    --font-dark: black;
+    --font-light: white;
+    --gold: #FAAB36;
+    --teal: #249EA0;
+    --card: rgb(0, 0, 0);
+}
+
+.temp {
+    width: 70%;
+    margin: auto;
+    font-size: .6em;
+}
+
+body {
     margin: 0;
     padding: 0;
     /*background-color: #bb9175;*/
-    font-family: 'Fredoka One', cursive;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: 1.3em;
     min-width: 375px;
-    background-color: #333;
-    color: black;
+    background-color: var(--background);
+    color: var(--font-light);
 }
 
-.logo {
-    font-family: 'Fredoka One', cursive;
-}
+
 
 header {
+    background-color: var(--background);
     padding: 0px 10%;
-    background-color: white;
-    font-family: sans-serif;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
 }
 
 .navButtons {
@@ -39,126 +55,95 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--font-light);
 }
 
 
-
+/*HERO*/
+h1 {
+    font-size: 2em;
+}
 
 .hero {
-    height: 500px;
-    background-image: url("/images/hero_image.jpg");
-    background-position: center;
+    background-image: url("/images/hero.jpg");
+    height: 600px;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
 }
 
-.hero-content p, a {
-    font-family: sans-serif;
-    font-weight: 100;
+.heroContent {
+    margin-left: 10%;
+    padding-top: 100px;
 }
 
-h1 {
-    font-size: 3em;
-}
-
-.hero-content {
-    margin: 0px 20%;
-    padding: 70px 0px;
-    color: white;
-}
-
-.hero input {
-    height: 42px;
-    width: 250px;
-    border-radius: 8px;
-    border: none;
-}
-
-.buttonSearch {
+.heroSearch {
+    margin-top: 5px;
+    width: 200px;
+    font-size: .8em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     padding: 10px;
-    background-color: forestgreen;
-    border-radius: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnSearch {
+    padding: 10px;
+    border: none;
+    font-size: .8em;
+    border-radius: 5px;
+    background-color: var(--gold);
 }
 
 
-.categories {
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
 
-.title {
-    color: white;
+
+.align-mid {
     text-align: center;
-    font-family: sans-serif;
-    margin-bottom: 70px;
 }
 
-    .title h1 {
-        margin-bottom: 0;
+.top10Cards {
+    background-image: url("/images/bg2.jpg");
+    background-size: cover;
+}
+
+    #top10Cards h2 {
+        margin: 0;
+        padding: 25px;
     }
 
-
-.list a {
-    text-decoration: underline;
-    color: white;
-    padding: 0px 30px;
+.shadow {
+    margin: 0;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 10px -7px var(--teal);
 }
 
-#categoryCards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 100px 10%;
-    justify-content: center;
-}
-
-.card img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.card h6 {
-    margin: 0 0 20px 0;
-    text-align: center;
-    color: white;
-}
-
-.card {
-    margin: 0 25px;
-    cursor: pointer;
-}
-
-    .card img:hover {
-        object-fit: none;
-        transition: .2s;
-    }
-
-
-
-
-
-
-#CoinCards {
+.CoinCards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px 5%;
 }
-/*CONTENT*/
-.cardka {
+/*CARD CONTENT*/
+.card {
     margin: 15px;
     padding: 15px 0px;
-    ;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(3, 3, 3);
+    background: linear-gradient(90deg, rgba(0, 128, 128, 0.5),var(--card) 10%, var(--card) 90%, rgba(255, 166, 0, 0.5) );
     text-align: center;
-    color: green;
+    color: var(--teal);
     width: 250px;
 }
+
+    .card:hover {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(90deg, rgba(0, 128, 128, 0.5),var(--card) 20%, var(--card) 80%, rgba(255, 166, 0, 0.5) );
+        box-shadow: 0px 0px 8px rgb(148, 148, 148);
+        opacity: 1;
+    }
 
 .cardHeader p {
     margin: 10px;
@@ -181,28 +166,39 @@ h1 {
 }
 
 .coinTable {
-    background-color: rgb(12, 12, 12);
-    ;
+    background-color: var(--card);
 }
 
 .coinTable, th, td {
-    border: 1px solid green;
+    border: 1px solid var(--teal);
     border-collapse: collapse;
     padding: 8px 7px;
+    text-overflow: clip;
 }
 
-    .coinTable p {
+    .coinTable a {
         text-decoration: none;
-        color: rgb(38, 255, 0);
+        color: var(--gold);
         font-size: .8em;
     }
 
+    .coinTable th:hover {
+        background-color: rgb(27, 27, 27);
+    }
 
 .daysResult p {
     margin: 0px;
     padding: 5px 0px;
     font-size: .7em;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -314,7 +310,6 @@ footer {
             .footer-distributed .footer-center p a {
                 color: #5383d3;
                 text-decoration: none;
-                ;
             }
 
     .footer-distributed .footer-right {
@@ -378,7 +373,7 @@ footer {
 
     .main {
         line-height: normal;
-        font-size: auto;
+        font-size: medium;
     }
 }
 /* Footer layout */
