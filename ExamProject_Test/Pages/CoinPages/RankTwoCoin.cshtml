@@ -23,7 +23,20 @@
                         <img class="CoinImage" src=@topTwoCoin.Image.Small><p class="CoinName">@topTwoCoin.Name (@topTwoCoin.Symbol.ToUpper())</p>
                     </div>
                     <div class="CoinPriceAndChange">
-                        <p class="CoinPrice">$@topTwoCoin.MarketData.CurrentPrice["usd"]<span class="CoinPriceChange">@Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)%</span></p>
+                        <p class="CoinPrice">$@topTwoCoin.MarketData.CurrentPrice["usd"]
+                            @if (topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"] > 0)
+                            {
+                                <span style="color: green;" class="CoinPriceChange">@Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)%</span>
+                            }
+                            else if (topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"] < 0)
+                            {
+                                <span style="color: red;" class="CoinPriceChange">@Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)%</span>
+                            }
+                            else
+                            {
+                                <span class="CoinPriceChange">@Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)%</span>
+                            }
+                            </p>
                     </div>
 
                     <div>
@@ -129,10 +142,6 @@
                     </div>
                 </div>
             </div>
-            <div class="TopGridItem">3</div>
-            <div class="TopGridItem">4</div>
-            <div class="TopGridItem">5</div>
-            <div class="TopGridItem">6</div>
         </div>
 
         <div id="Exchange">
@@ -150,9 +159,78 @@
 
             <div class="CoinData">
                 <p class="CoinDataTitle">@topTwoCoin.Name Price and Market Stats</p>
-                <div>
-                    <p class="CoinDataLeft">@topTwoCoin.Name Price</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.CurrentPrice["usd"]</p>
+
+                <div class="CoinDataList">
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">@topTwoCoin.Name Price</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.CurrentPrice["usd"]</p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">Market Cap</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.MarketCap["usd"]</p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">Volume / Market Cap</p> <p class="CoinDataRight"> @(Math.Round((decimal)(topTwoCoin.MarketData.TotalVolume["usd"]/topTwoCoin.MarketData.MarketCap["usd"]), 4))</p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">24h Low / 24h High</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.Low24H["usd"] / $@topTwoCoin.MarketData.High24H["usd"]</p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">Market Cap Rank</p> <p class="CoinDataRight"> #@topTwoCoin.MarketCapRank</p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">All-Time High</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.Ath["usd"]
+                                @if(topTwoCoin.MarketData.AthChangePercentage["usd"] > 0)
+                                {
+                                    <span style="color: green;" class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AthChangePercentage["usd"],2)%</span>
+                                }
+                                else if (topTwoCoin.MarketData.AthChangePercentage["usd"] < 0)
+                                {
+                                    <span style="color: red;" class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AthChangePercentage["usd"],2)%</span>
+                                }
+                                else
+                                {
+                                    <span class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AthChangePercentage["usd"],2)%</span>
+                                }
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="CoinDataListItem">
+                        <div class="CoinDataLR">
+                            <p class="CoinDataLeft">All-Time Low</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.Atl["usd"]
+                                @if(topTwoCoin.MarketData.AtlChangePercentage["usd"] > 0)
+                                {
+                                    <span style="color: green;" class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AtlChangePercentage["usd"],2)%</span>
+                                }
+                                else if (topTwoCoin.MarketData.AtlChangePercentage["usd"] < 0)
+                                {
+                                    <span style="color: red;" class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AtlChangePercentage["usd"],2)%</span>
+                                }
+                                else
+                                {
+                                    <span class="CoinDataListPercentage">@Math.Round((decimal)topTwoCoin.MarketData.AtlChangePercentage["usd"],2)%</span>
+                                }
+                                </p>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 

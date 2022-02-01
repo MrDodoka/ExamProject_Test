@@ -107,10 +107,10 @@ h1 {
     background-size: cover;
 }
 
-    #top10Cards h2 {
-        margin: 0;
-        padding: 25px;
-    }
+#top10Cards h2 {
+    margin: 0;
+    padding: 25px;
+}
 
 .shadow {
     margin: 0;
@@ -204,10 +204,8 @@ h1 {
 .TopGrid {
     display: grid;
     grid-template-columns: 80% auto;
-}
-
-.TopGridItem {
-    background-color: #252525;
+    background-color: #333;
+    border-radius: 20px;
 }
 
 .BasicInfo {
@@ -343,17 +341,59 @@ label {
     grid-template-columns: 60% auto;
     margin-top: 10px;
 }
-    .CoinChart{
 
-    }
-    .CoinData {
-        background-color: #333;
-        margin-left: 10px;
-        border-radius: 20px;
-    }
-        .CoinDataLeft{
+.CoinChart {
+}
 
-        }
+.CoinDataTitle {
+    margin: 10px 15px;
+    text-align: left;
+}
+
+.CoinData {
+    background-color: #333;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.CoinDataLR {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.CoinDataLeft {
+    text-align: left;
+    margin: 0px;
+}
+
+.CoinDataRight {
+    text-align: right;
+    margin: 0px;
+}
+
+.CoinDataRight span{
+    font-size: small;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+    .CoinDataList {
+        margin: 10px 15px;
+        font-weight: normal;
+        font-size: medium;
+    }
+
+.CoinDataListItem {
+    margin: 0px;
+    border-bottom: solid 2px;
+    padding: 10px 0px;
+    
+}
+CoinDataListPercentage {
+    font-size: small;
+    color: red;
+}
 
 
 
