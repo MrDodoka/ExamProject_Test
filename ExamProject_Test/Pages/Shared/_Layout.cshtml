@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="navButtons">
-            <div >
+            <div>
                 <a class="logo" asp-area="" asp-page="/Index">SzEBBHZ</a>
             </div>
 
@@ -25,13 +25,13 @@
                 <a href="#"> Mi van a hütöben </a>
             </div>
 
-            <div >
+            <div>
                 <a href="#"> <i class="fa fa-user-o" aria-hidden="true"></i> </a>
             </div>
         </div>
     </header>
     <div>
-            @RenderBody()
+        @RenderBody()
     </div>
 
     <footer class="footer-distributed">
@@ -98,5 +98,11 @@
     function CopyToClipBoard(){
         navigator.clipboard.writeText(document.getElementById("address").innerHTML);
     }
+    function exchange1(curr1, coinPrice){
+            document.getElementById("currency2").value = (curr1 * (1 / coinPrice)).toFixed(18);
+        }
+        function exchange2(curr2, coinPrice){
+            document.getElementById("currency1").value = (curr2 * coinPrice).toFixed(2);
+        }
 </script>
 </html>

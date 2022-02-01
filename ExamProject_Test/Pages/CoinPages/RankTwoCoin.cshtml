@@ -11,14 +11,14 @@
 </head>
 <div>
     @*<p>Name of the coin: @topTwoCoin.Name</p>
-    <p>Rank of the coin: @topTwoCoin.MarketCapRank</p>
-    <p>Price of the coin: @Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)</p>*@
+        <p>Rank of the coin: @topTwoCoin.MarketCapRank</p>
+        <p>Price of the coin: @Math.Round(topTwoCoin.MarketData.PriceChangePercentage24HInCurrency["usd"],1)</p>*@
     <div class="CoinPageContent">
         <div class="TopGrid">
 
             <div class="TopGridItem">
                 <div class="BasicInfo">
-                    <p class="CoinRank">Rank #2</p>
+                    <p class="CoinRank">Rank #@topTwoCoin.MarketCapRank</p>
                     <div class="CoinImageName">
                         <img class="CoinImage" src=@topTwoCoin.Image.Small><p class="CoinName">@topTwoCoin.Name (@topTwoCoin.Symbol.ToUpper())</p>
                     </div>
@@ -27,9 +27,8 @@
                     </div>
 
                     <div>
-                        
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -135,5 +134,15 @@
             <div class="TopGridItem">5</div>
             <div class="TopGridItem">6</div>
         </div>
+
+        <div id="Exchange">
+
+            <label for="currency1" id="currency1_Code">USD</label>
+            <input oninput="exchange1(this.value, @topTwoCoin.MarketData.CurrentPrice["usd"])" type="number" id="currency1">
+            <img class="ExchangeIMG" src="~/images/transfer.png">
+            <label for="currency2" id="currency2_Code">ETH</label>
+            <input oninput="exchange2(this.value, @topTwoCoin.MarketData.CurrentPrice["usd"])" type="number" id="currency2">
+        </div>
+
     </div>
 </div>

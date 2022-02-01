@@ -295,7 +295,49 @@ h1 {
 
 
 
+#Exchange {
+    margin: auto;
+    width: 80%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+}
 
+    #Exchange input {
+        font-size: 1.2em;
+        padding: 5px;
+        margin-right: 0px;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        text-align: center;
+    }
+
+    #Exchange #currency1_Code, #currency2_Code {
+        font-weight: bold;
+        color: black;
+    }
+
+    #Exchange input:focus, textarea:focus, select:focus {
+        outline: none;
+    }
+
+.ExchangeIMG {
+    width: 50px;
+    margin: 0px 10px 0px 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1.2em;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid grey;
+    padding: 0px 10px;
+}
 
 
 
