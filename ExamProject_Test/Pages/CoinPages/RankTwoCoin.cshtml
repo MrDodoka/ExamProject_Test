@@ -136,13 +136,26 @@
         </div>
 
         <div id="Exchange">
-
             <label for="currency1" id="currency1_Code">USD</label>
             <input oninput="exchange1(this.value, @topTwoCoin.MarketData.CurrentPrice["usd"])" type="number" id="currency1">
             <img class="ExchangeIMG" src="~/images/transfer.png">
             <label for="currency2" id="currency2_Code">ETH</label>
             <input oninput="exchange2(this.value, @topTwoCoin.MarketData.CurrentPrice["usd"])" type="number" id="currency2">
         </div>
+
+        <div class="CnDGrid">
+            <div class="CoinChart">
+                <coingecko-coin-compare-chart-widget coin-ids="bitcoin,eos,ethereum,litecoin" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+            </div>
+
+            <div class="CoinData">
+                <p class="CoinDataTitle">@topTwoCoin.Name Price and Market Stats</p>
+                <div>
+                    <p class="CoinDataLeft">@topTwoCoin.Name Price</p> <p class="CoinDataRight"> $@topTwoCoin.MarketData.CurrentPrice["usd"]</p>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>

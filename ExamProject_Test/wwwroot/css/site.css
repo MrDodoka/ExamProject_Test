@@ -296,8 +296,7 @@ h1 {
 
 
 #Exchange {
-    margin: auto;
-    width: 80%;
+    margin-top: 10px;
     background-color: #333;
     display: flex;
     justify-content: center;
@@ -339,13 +338,22 @@ label {
     padding: 0px 10px;
 }
 
+.CnDGrid {
+    display: grid;
+    grid-template-columns: 60% auto;
+    margin-top: 10px;
+}
+    .CoinChart{
 
+    }
+    .CoinData {
+        background-color: #333;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+        .CoinDataLeft{
 
-
-
-
-
-
+        }
 
 
 
